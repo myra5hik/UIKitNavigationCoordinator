@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "UIKitNavagationCoordinator",
+    name: "UIKitNavigationCoordinator",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "UIKitNavagationCoordinator",
-            targets: ["NavagationCoordinator"]
+            name: "UIKitNavigationCoordinator",
+            targets: ["NavigationCoordinator"]
         ),
     ],
     targets: [
         .target(
-            name: "NavagationCoordinator",
+            name: "NavigationCoordinator",
             dependencies: []
         )
     ]
