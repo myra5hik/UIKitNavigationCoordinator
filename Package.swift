@@ -6,17 +6,17 @@ import PackageDescription
 let package = Package(
     name: "UIKitNavagationCoordinator",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v13)
     ],
     products: [
         .library(
             name: "UIKitNavagationCoordinator",
-            targets: ["UIKitNavagationCoordinator"]
+            targets: ["NavagationCoordinator"]
         ),
     ],
     targets: [
         .target(
-            name: "UIKitNavagationCoordinator",
+            name: "NavagationCoordinator",
             dependencies: []
         )
     ]
