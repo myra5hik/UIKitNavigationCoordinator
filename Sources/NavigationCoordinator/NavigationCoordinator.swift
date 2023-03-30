@@ -19,7 +19,7 @@ open class NavigationCoordinator<Destination: IRoutingDestination>: INavigationC
     // Dependencies
     private let factory: any IScreenFactory<Destination>
 
-    init(root: Destination, factory: some IScreenFactory<Destination>, navigationController: UINavigationController? = nil) {
+    public init(root: Destination, factory: some IScreenFactory<Destination>, navigationController: UINavigationController? = nil) {
         self.navigationController = navigationController ?? UINavigationController(rootViewController: UIViewController())
         self.factory = factory
         self.root = root
