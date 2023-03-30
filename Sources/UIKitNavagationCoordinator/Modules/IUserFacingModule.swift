@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol IUserFacingModule: AnyObject {
+public protocol IUserFacingModule: AnyObject {
     var rootView: UIViewController { get }
     var coordinator: any INavigationCoordinator { get }
 }
 
-extension IUserFacingModule {
+public extension IUserFacingModule {
     var rootView: UIViewController { self.coordinator.rootViewController }
 }

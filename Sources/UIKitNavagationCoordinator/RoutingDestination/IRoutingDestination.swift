@@ -7,4 +7,4 @@
 
 import Foundation
 
-protocol IRoutingDestination: Identifiable, Hashable { }
+public protocol IRoutingDestination: Identifiable, Hashable { }

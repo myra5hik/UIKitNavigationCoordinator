@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol INavigationCoordinator<Destination>: AnyObject {
+public protocol INavigationCoordinator<Destination>: AnyObject {
     associatedtype Destination: IRoutingDestination
 
     var rootViewController: UIViewController { get }
@@ -21,7 +21,7 @@ protocol INavigationCoordinator<Destination>: AnyObject {
     func dismiss(animated: Bool)
 }
 
-extension INavigationCoordinator {
+public extension INavigationCoordinator {
     func start() { start(animated: true) }
     func startModally(on: UIViewController) { startModally(on: on, fullScreen: false, animated: true) }
     func push(_ destination: Destination) { push(destination, animated: true) }
